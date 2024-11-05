@@ -1,0 +1,21 @@
+# Integer and  module division/Type conversion
+
+    # Modular division: is used to find the remainder of a division operation, there is the mod function or the % operator  
+
+    # Integer divison: returns the quotient (how much b fits into a) using div(,) or the division symbol
+
+#Currency Converter
+
+function convert_to_dollars()
+    println("Enter # of cents: ")
+    cents = parse(Float64, readline())
+    dollars = div(cents, 100) 
+    remainder = mod(cents, 100)
+
+    total = dollars + (remainder / 100)
+
+    println("You have ", total, " dollars!")
+end
+
+convert_to_dollars()
+
